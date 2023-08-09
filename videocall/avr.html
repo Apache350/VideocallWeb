@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Call Website</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+       h1 {
+        background-color:black;
+        padding:15px;
+        color:white;
+        
+        }
+        h6{
+            background:grey;
+            padding:10px;
+            color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1 ><center>Video Call Interface</center></h1>
+       <h6 > <marquee>  Enter 'YOUR_SIGNALLING_SERVER_URL' and Your room id to connect with your friend</marquee> </h6>
+    <div class="container mt-5" > 
+        <video id="localVideo" autoplay playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+    <div class="container mt-5"  >
+        <button id="startButton" class="btn-success">Start Call</button> &nbsp;
+        <button id="endButton" class="btn-danger">End Call</button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button id="shareScreenButton" class="btn-success">Share Screen</button> &nbsp;
+        <button id="stopScreenShareButton" class="btn-danger">Stop Screen Sharing</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button id="startRecordingButton" class="btn-success">Start Recording</button> &nbsp;
+        <button id="stopRecordingButton" class="btn-danger">Stop Recording</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+    <script src="https://cdn.rawgit.com/muaz-khan/RecordRTC/a7e6cbc2/RecordRTC.min.js"></script>
+    <script src="avr.js"></script>
+</body>
+</html>
